@@ -1,0 +1,124 @@
+:root {
+    --primary: #0041a3;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+body {
+    margin: 0;
+    min-height: 80vh;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-color: var(--primary);
+}
+
+.primary {
+    color: var(--primary)
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    text-align: center;
+
+    margin-top: 60px;
+
+    border-radius: .4rem;
+    padding: .5rem 1rem .1rem .5rem;
+
+    background-color: var(--white);
+    box-shadow: 5px 5px 30px #222;
+}
+
+.card__title {
+    transition: .3s;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+
+    padding: 0.5rem 1.3rem;
+
+    color: var(--primary);
+
+    transition: .5s;
+    border-radius: 1rem;
+    border: 2px solid var(--primary);
+}
+
+.btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn + .btn {
+    margin-left: 10px;
+}
+
+.card__btn {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: teal;
+}
+
+.btn-primary:hover {
+    border: none;
+    background-color: darkcyan;
+}
+
+.btn-danger {
+    color: red;
+    border: 2px solid red;
+}
+
+.btn-danger:hover {
+    background-color: red;
+}
+
+.from-control__input {
+    width: 100%;
+    padding: 0.5rem 0.9rem;
+
+    border-radius: .4rem;
+    border: 1px solid var(--primary);
+}
+
+.list {
+    display: block;
+    margin: 0 auto;
+
+    padding: 0;
+    list-style: none;
+
+}
+
+.list__item {
+    text-align: left;
+    margin: 0;
+
+    padding: 0.2rem 0.5em;
+}
+
+.note__item + .note__item {
+    margin-top: 10px;
+}
